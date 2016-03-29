@@ -1,0 +1,8 @@
+<h1>Image Overview</h1>
+{% for image in image_list %}
+  <h2>{{ image.img_name }}</a></h2>
+  <p>
+    {{ image.image_url }} |
+    keywords {{ image.keywords|join:', ' }}
+  </p>
+{% endfor %}

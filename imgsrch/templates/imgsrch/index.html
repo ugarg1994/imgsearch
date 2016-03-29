@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Thumbnail Gallery - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'imgsrch/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'imgsrch/css/thumbnail-gallery.css' %}" rel="stylesheet">
+
+   
+</head>
+
+<body>
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Image Search</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <form id="search_form">
+                    <div class="input-group">
+                          <input type="text" id="search_text" class="form-control" placeholder="Search for...">
+                          <input type="hidden" id="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                          <span class="input-group-btn">
+                                <button id="img_srch" class="btn btn-default" type="button">Go!</button>
+                          </span>
+                     </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div id="image-container" class="image-container">
+                <!--<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
+                </div>-->
+
+            </div>
+            
+        </div>
+
+        <hr>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="{% static 'imgsrch/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'imgsrch/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'imgsrch/js/imgsrch.js' %}"></script>
+
+</body>
+
+</html>
