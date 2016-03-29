@@ -172,7 +172,7 @@ connect('cyware',host='mongodb://utkarsh:utkarsh@ds025449.mlab.com:25449/imgsrch
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = ""
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
