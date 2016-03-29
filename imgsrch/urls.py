@@ -19,7 +19,6 @@ from imgsrch import views
 
 urlpatterns = patterns('',
 	url(r'^test/$', views.test, name='test'),
-    url(r'^image/(?P<pk>[a-z\d]+)/$', views.image_detail, name='image_detail'),
     url(r'^$', views.Home.as_view(), name='Home'),
     url(r'^insert/$', views.insertDoc, name='insert'),
     url(r'^image_list/$', views.image_list, name='image_list'),
