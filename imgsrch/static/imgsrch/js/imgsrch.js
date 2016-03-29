@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+    document.getElementById("search_text").focus();
 	$('#img_srch').click(function(event){
         var srchtxt = document.getElementById("search_text").value;
         var csrftoken = document.getElementById("csrfmiddlewaretoken").value;
