@@ -48,7 +48,7 @@ class Home(generic.ListView):
     def post(self, request):
 
         search_text = request.POST.get('srchtxt', False)
-
+        search_text = search_text.lower()
         words = search_text.split()
         img_url = []
         #print words
