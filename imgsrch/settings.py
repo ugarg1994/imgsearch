@@ -5,6 +5,7 @@ from mongoengine import *
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 BASE_DIR = os.path.realpath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
